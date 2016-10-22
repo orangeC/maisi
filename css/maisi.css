@@ -142,13 +142,31 @@ a{
 	width: 960px;
 	height: 528px;
 	margin: 0 auto;
+	position: relative;
 	background-color: #000;
+}
+.mleft{
+	position: absolute;
+	left: -500px;
+	width: 500px;
+	height: 528px;
+	background-color: #fff;
+	opacity: 0.7;
+}
+.mright{
+	position: absolute;
+	right: -500px;
+	width: 500px;
+	height: 528px;
+	opacity: 0.7;
+	background-color: #fff;
 }
 .left{
 	width: 80px;
 	height: 80px;
 	position: absolute;
-	left: 0;
+	z-index: 10;
+	left: -80px;
 	top: 200px;
 	overflow: hidden;
 }
@@ -156,7 +174,7 @@ a{
 	width: 80px;
 	height: 80px;
 	position: absolute;
-	right: 0;
+	right: -80px;
 	top: 200px;
 	overflow: hidden;
 }

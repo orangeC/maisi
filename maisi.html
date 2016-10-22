@@ -24,7 +24,12 @@
 			$(this).find("p").stop().animate({"margin-top":"0"},300);
 			$(this).find("img").stop().animate({"width":"0","height":"0","left":"80px"},300);
 		});
-		$(".banner_inner div:lt(2)").hover(function(){
+		$(".banner_inner .left").hover(function(){
+			$(this).find(".img_up").css("margin-top","-80px")
+		},function(){
+			$(this).find(".img_up").css("margin-top","0")
+		});
+		$(".banner_inner .right").hover(function(){
 			$(this).find(".img_up").css("margin-top","-80px")
 		},function(){
 			$(this).find(".img_up").css("margin-top","0")
@@ -162,10 +167,16 @@
 	</div>
 	<div id="banner">
 		<div class="banner_inner">
-			<div class="left"><img src="images/left.gif" alt="">
-				<img class="img_up" src="images/left_on.gif" alt=""></div>
-			<div class="right"><img src="images/right.gif" alt="">
-				<img class="img_up" src="images/right_on.gif" alt=""></div>
+			<div class="mleft"></div>
+			<div class="mright"></div>
+			<div class="left">
+			<img src="images/right.gif" alt="">
+				<img class="img_up" src="images/right_on.gif" alt="">
+				</div>
+			<div class="right">
+			<img src="images/left.gif" alt="">
+				<img class="img_up" src="images/left_on.gif" alt="">
+				</div>
 			<ul>
 				<li><img src="images/0001.jpg" alt=""></li>
 				<li><img src="images/zhaopin.jpg" alt=""></li>

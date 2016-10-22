@@ -103,7 +103,7 @@ a{
 }
 #nav>ul>li>.nav_down{
 	width: 160px;
-	height: 140px;
+	height: 150px;
 	position: absolute;
 	top: 85px;
 	z-index: 2;
@@ -112,7 +112,7 @@ a{
 }
 #nav>ul>li>.nav_ul{
 	width: 160px;
-	height: 140px;
+	height: 150px;
 	background: #000;
 	position: absolute;
 	z-index: 1;
@@ -120,6 +120,7 @@ a{
 	display: none;
 }
 #nav>ul>li>.nav_ul>ul>li{
+	line-height: 18px;
 	margin-left: 15px;
 	padding-top: 8px;
 	text-shadow:1px 1px 10px #09587a;
@@ -128,6 +129,9 @@ a{
 	color: #09587a;
 	font-size: 13px;
 	font-family: "微软雅黑";
+}
+#nav>ul>li>.nav_ul_left>ul>li{
+	margin-top: 5px;
 }
 #banner{
 	height: 530px;

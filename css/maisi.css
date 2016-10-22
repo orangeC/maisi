@@ -321,6 +321,8 @@ a{
 	width: 960px;
 	height: 155px;
 	margin: 0 auto;
+	clear: both;
+	overflow: hidden;
 }
 .pic_title{
 	width: 300px;

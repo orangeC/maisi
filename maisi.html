@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.marquee.js"></script>
-	<script type="text/javascript" src="js/jquery.simplyscroll.min.js"></script>
+	<script type="text/javascript" src="js/kxbdSuperMarquee.js"></script>
 	<script type="text/javascript">
 
 	$(function(){
@@ -67,12 +67,14 @@
 		$(".pic_title").children().css("float","left");
 		$(".pic_banner ul li").children().css("float","left");
 		$("#up>.up_inner>ul").marquee({yScroll: "bottom"});
+		$("#pic .pic_banner").kxbdSuperMarquee({
+			direction:"right",
+			duration:20,
+			isMarquee:true,
+			isEqual:false,
+			scrollDelay:20,
+		})
 	});
-	(function($) {
-		$(function() {
-			$(".pic_banner ul").simplyScroll();
-		});
-	})(jQuery);
 	</script>
 
 </head>
@@ -237,13 +239,13 @@
 		</div>
 		<div class="pic_banner">
 			<ul>
-				<li><img src="images/logo/hz.jpg" alt=""><div class="name"></div></li>
+				<li><img src="images/logo/hz.jpg" alt=""><div class="name">XXXX有限公司</div></li>
 				<li><img src="images/logo/bz.jpg" alt=""><div class="name">苏州众和汽车销售有限公司</div></li>
 				<li><img src="images/logo/fdzd.jpg" alt=""><div class="name">福大自动化苏州分公司</div></li>
 				<li><img src="images/logo/tzjy.jpg" alt=""><div class="name">北京天智教育集团苏州公司</div></li>
 				<li><img src="images/logo/szkjxy.jpg" alt=""><div class="name">苏州科技学院</div></li>
-				<li><img src="images/logo/wgy.jpg" alt=""><div class="name">此广告位招商中</div></li>
-				<li><img src="images/logo/csrs.jpg" alt=""><div class="name">呵呵没看见</div></li>
+				<li><img src="images/logo/wgy.jpg" alt=""><div class="name">XXXX有限公司</div></li>
+				<li><img src="images/logo/csrs.jpg" alt=""><div class="name">XXXX有限公司</div></li>
 				<li><img src="images/logo/tpy.jpg" alt=""><div class="name">太平洋保险苏州分公司</div></li>
 				<li><img src="images/logo/jsdt.jpg" alt=""><div class="name">苏州佳世达电通有限公司</div></li>
 				<li><img src="images/logo/shxm.jpg" alt=""><div class="name">上海熊猫机械集团(苏州)</div></li>
